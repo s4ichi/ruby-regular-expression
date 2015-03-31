@@ -7,6 +7,10 @@ module Pattern
     end
   end
 
+  def matches?(string)
+    to_nfa_design.accepts?(string)
+  end
+  
   def inspect
     "/#{self}/"
   end
