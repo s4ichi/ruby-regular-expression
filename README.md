@@ -1,1 +1,1 @@
-# regex expression of Ruby language
+# regular expression of Ruby language
