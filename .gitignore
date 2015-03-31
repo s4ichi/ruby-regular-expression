@@ -1,2 +1,3 @@
 # use bundler
-vender/
+/vender/bundle
+/.bundle
