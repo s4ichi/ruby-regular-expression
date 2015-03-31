@@ -8,4 +8,13 @@ class Literal < Struct.new(:character)
   def precedence
     3
   end
+
+  def to_nfa_design
+    start_state = Object.new
+    accept_states = Object.new
+    rule = FaRule.new(start_state, character, accept_states)
+    rulebook = NfaRulebook.new([rule])
+
+    NfaDesign.new(start_state, [accept_states], rulebook)
+  end
 end
